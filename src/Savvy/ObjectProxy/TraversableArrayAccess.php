@@ -56,7 +56,7 @@ class Savvy_ObjectProxy_TraversableArrayAccess extends Savvy_ObjectProxy_ArrayAc
         $this->getInnerIterator()->rewind();
     }
 
-    public function count()
+    public function count():int
     {
         if ($this->getInnerIterator() instanceof Countable) {
             return count($this->getInnerIterator());
